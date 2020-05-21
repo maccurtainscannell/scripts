@@ -77,8 +77,7 @@ Station is a bit more complex, because the stations depend on county with no ove
 """
 
 resolutions = [1,9,2]
-counties = xrange(1,28)
-stations = 
+counties = range(1,28)
 
 for res in resolutions:
 
@@ -87,14 +86,14 @@ for res in resolutions:
     
     for cty in counties:
     
-        county = Seldriverdriver.find_element_by_xpath("//*[@name='countyno']")).select_by_value('%d', % cty)
-        time.sleep(5)
-        
-        #station
+        county = Select(driver.find_element_by_xpath("//*[@name='countyno']")).select_by_value('1')
+#station
 
 
 
 
+#resolution.send_keys(1)
+#county.selectByVisibleText("Cork")
 time.sleep(5)
 driver.quit()
 
